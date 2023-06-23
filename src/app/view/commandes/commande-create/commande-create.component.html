@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-header">Création des commande</div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="reference">Référence</label>
+        <input class="form-control" id="reference" type="text" [(ngModel)]="commande.reference">
+      </div>   
+  
+      <div class="form-group">
+        <label for="total">Total</label>
+        <input class="form-control" id="total" type="text" [(ngModel)]="commande.total">
+      </div>  
+  
+      <div class="form-group">
+        <label for="totalPaye">Total payé</label>
+        <input class="form-control" id="totalPaye" type="text" [(ngModel)]="commande.totalPaye">
+      </div>  
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-success" (click)="save()">Valider</button>
+    </div>
+  </div>
+  
